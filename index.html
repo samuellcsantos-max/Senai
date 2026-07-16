@@ -1,1 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página SENAI Samuel</title>
 
+    </head>
+    <body>
+        <div class="card">
+            <h1>SENAI</h1>
+            <p>Página simples combinado HTML, CSS javaScript.</p>
+            <div class="contador" id="numero-contador">0</div>
+            <button id="botao-clique">Clique aqui</button>
+            </div>
+            <script>
+                const btn = document.getElementById('botao-clique');
+                const num = document.getElementById('numero-contador');
+                let c = 0;
+                btn.addEventListener('click', () => num.textContent = ++c);
+            </script>
+            
+    </body>
+</html>
